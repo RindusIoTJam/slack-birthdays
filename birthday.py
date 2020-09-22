@@ -28,8 +28,8 @@ birthdayEmployees = filter(isBirthdayToday, employees)
 
 birthdayEmployees.sort(key=lambda x: x['first_name'])
 
-#if (len(birthdayEmployees) == 0):
-	# exit()
+if (len(birthdayEmployees) == 0):
+	exit()
 
 # Slack payload
 data = {
